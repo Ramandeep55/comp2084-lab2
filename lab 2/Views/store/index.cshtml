@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>COMP2084 - Lab 2</h2>
+
+<p>List of products</p>
+
+<ul>
+	<li>@Html.ActionLink("Laptop","laptop","index",new { ProductName = "Laptop"}, null)</li>
+    <li>@Html.ActionLink("Tablet","tablet","index", new { ProductName = "Tablet" }, null)</li>
+	<li>@Html.ActionLink("Desktop","desktop","index", new { ProductName = "Desktop" }, null)</li>
+
+</ul>
+<footer>
+	<p>Ramandeep Kaur</p>
+	<p>200375567</p>
+</footer>
